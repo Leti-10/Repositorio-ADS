@@ -1,0 +1,94 @@
+Lista I Masanori
+
+Exerc 1 
+
+1 n1 = int(input('Insira um número:'))
+2 n2 = int(input('Insira outro número:'))
+3 print(f'O resultado é:{n1+n2}')
+4 x = input()
+
+Exerc 2
+
+1 print('Converta metros em milímetros!')
+2 m=int(input('Metros:'))
+3 print(f'Milímetros:{m*1000}')
+
+Exerc 3
+
+1 d=int(input('Dias:'))
+2 h=int(input('Horas:'))
+3 m=int(input('Minutos:'))
+4 s=int(input('Segundos:'))
+5 Total= total=d*24*60*60+h*60*60+m*60+s
+6 print(f'O total em segundos é: {Total}')
+
+Exerc 4 
+
+1 s=float(input('Valor do salário atual:'))
+2 a=float(input('Percentual do aumento:'))
+3 aumento=s*a/100
+4 novo=s+aumento
+5 print(f'O valor do aumento é: R${aumento:.2f}')
+6 print(f'O salário novo é: R${novo:.2f}')
+
+Exerc 5
+
+1 p=float(input('Preço da mercadoria:'))
+2 d=float(input('Percentual do desconto:'))
+3 desconto=p*d/100
+4 novo=p-desconto
+5 print(f'O valor do desconto é: R${desconto:.2f}')
+6 print(f'O valor a pagar é: R${novo:.2f}')
+
+Exerc 6
+
+1 d= float(input('Distância a percorrer KM:'))
+2 v=float(input('Velocidade média KM/h:'))
+3 tv=d/v
+4 print(f'o tempo de viagem é de {tv} horas.')
+
+Exerc 7 
+
+1 c=float(input('Celsius:'))
+2 F=9*c/5+32
+3 print(f'{F:.2f} ferenheit')
+
+Exerc 8 
+
+1 f=float(input('Farenheit:'))
+2 c=(f-32)*5/9
+3 print(f'{c:.2f} Celsius')
+
+Exerc 9 
+
+1 k=float(input('KM rodados:'))
+2 d=float(input('Dias alugados:'))
+3 p=0.15*k+60*d
+4 print(f'O preço a ser pago é de: R${p:.2f}')
+
+Exerc 10
+
+1 c=int(input('Cigarros fumados p/d:'))
+2 anos=int(input('Anos fumando:'))
+3 tf=anos*365*c
+4 tempo=tf*10/60/24
+5 print(f'O tempo perdido é de {tempo:.1f} dias.')
+
+Exerc 11
+
+1 print(len(str(2**1000)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+1 exerc
+
+1 n=float(input('Insira uma nota:'))
+2 while n>10 or n<0:
+3    print('Nota inválida!')
+4    n=float(input('Insira uma Nota:'))
+5 else:
+6    n>=0 or n<=10
+7    print(f'Nota:{n:.2f}')
+
+2 exerc
+
+1 n=input('Usuário:')
+2 senha=input('Insira sua senha:')
+3 while n==senha:
+4    print('Sua senha deve ser diferente de seu Usuário!')
+5    n=input('Usuário:')
+6    senha=input('Insira sua senha:')
+7 print('Usuário e senha válidos!')
+
+3 exerc
+
+1 h = 80000
+2 b = 200000
+3 anos = 0
+4 while h <= b:
+5  h = h + h * 0.03
+6  b = b + b * 0.015
+7  anos = anos + 1
+8 print (f'A quantidade de anos necessários são: {anos}')
+
+4 exerc
+
+1 n=int(input('Digite o valor de n:'))
+2 a,b=1,1
+3 k=1
+4 while k<=n-2:
+5    a,b=b,a+b
+6    k=k+1
+7 print(b)
+
+5 exer 
+
+1 a=int(input('Digite um número:'))
+2 b=int(input('Digite um número:'))
+3 while a%b !=0:
+4    a,b=b,a%b
+5 print(f'o mdc é {b}')
