@@ -1,0 +1,71 @@
+.botao-cute {
+    -fx-background-radius: 8px;
+    -fx-font-family: "Source Sans Pro", sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: center;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 4,0.0,0,1 );
+    -fx-background-insets: 0, 0 0 30% 0;
+    -fx-background-color:
+            linear-gradient(to bottom, #fa8ca1 0%, #fd758e 50%, #ff486a 100%),
+            linear-gradient(from 0% 0% to 0% 30%, rgba(255,255,255,0.7), rgba(255,255,255,0));
+}
+
+.botao-cute:hover {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.7), 3, 0.2, 0, -1),
+    innershadow(gaussian, rgba(255, 255, 255, 0.8), 6, 0.4, 0, 2),
+    dropshadow(gaussian, rgba(0, 0, 0, 0.5), 6, 0.3, 0, 4);
+    -fx-translate-y: -1;}
+
+.botao-cute:pressed{
+    -fx-translate-y: 2;
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.6), 4, 0.4, 0, 1),
+    innershadow(gaussian, rgba(255, 255, 255, 0.3), 2, 0.4, 0, -1);}
+
+/*tabs*/
+
+.tab-pane *.tab-header-background {
+    -fx-background-color: #ffdae4;
+}
+
+.tab-pane .tab {
+    -fx-background-insets: 0;
+    -fx-padding: 5 10 5 10;
+    -fx-background-color: rgba(115, 0, 22, 0);
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #f5b3be;
+    -fx-background-radius: 12px 12px 0px 0px;
+    -fx-border-width: 2 2 0 2;
+    -fx-border-color: #ffb1cc;
+    -fx-border-radius: 8px 8px 0px 0px;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #fffafa;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #F6729DFF;
+    -fx-font-family: Inter;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.table-cell.ativo {
+    -fx-font-weight: bold;
+    -fx-text-fill: green;
+}
+
+.table-cell.inativo {
+    -fx-font-weight: bold;
+    -fx-text-fill: red;
+}
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javasript</title>
+    <Script>
+        var nome = parseFloat(prompt('Digite seu Nome:'))
+        var alt = parseFloat(prompt('Digite sua Altura em cm:'))
+        var pes = parseFloat(prompt('Digite seu peso em kg:'))
+
+        alt = alt/=100;
+        var imc = pes / (alt**2)
+
+        if (imc < 16)
+        alert('Baixo peso muito grave')
+        if (imc >= 16 && imc <= 16.99)
+        alert('Baixo peso grave')
+        if (imc >= 17 && imc <= 18.49)
+        alert('Baixo peso')
+        if (imc >= 18.50 && imc <= 24.99)
+        alert('Peso normal')
+        if (imc >=25 && imc <= 29.99)
+        alert('Sobrepeso')
+        if (imc >=30 && imc<=34.99)
+        alert('Obesidade Grau I')
+        if (imc >=35 && imc<=39.99)
+        alert('Obesidade Grau II')
+        if (imc >=40)
+        alert('Obesidade Grau III')
+
+        alert
+
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>

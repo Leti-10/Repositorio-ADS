@@ -22,4 +22,12 @@ public class Funcionario extends Pessoa{
         salario = salario + (salario * percentual);
         return salario;
     }
+
+    public String toString() {
+        return "Nome: " + nome +
+                "\tRG: " + rg +
+                "\tSalário: R$ " + String.format("%.2f", salario);
+    }
+
+
 }

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: ffdae4;" stylesheets="@../../../Css/estilo.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainController">
+   <left>
+      <StackPane styleClass="stack-pane" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView blendMode="MULTIPLY" fitHeight="600.0" fitWidth="184.0" opacity="0.4" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../../../imagens/listras.png" />
+               </image>
+               <effect>
+                  <SepiaTone level="0.51" />
+               </effect>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="174.0" spacing="15.0" styleClass="stack-pane">
+               <children>
+                  <Button fx:id="btnAlunos" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#abrirTelaAlunos" prefHeight="60.0" prefWidth="106.0" styleClass="botao-cute" stylesheets="@../../../Css/estilo.css" text="Alunos" />
+                  <Button fx:id="btnCursos" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#abrirTelaCursos" prefHeight="60.0" prefWidth="106.0" styleClass="botao-cute" stylesheets="@../../../Css/estilo.css" text="Cursos" />
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </left>
+   <center>
+      <StackPane fx:id="areaConteudo" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" fillWidth="false" layoutX="41.0" layoutY="48.0" prefHeight="503.0" prefWidth="534.0" spacing="10.0" style="-fx-background-color: #fffafa; -fx-border-width: 3; -fx-border-color: F6729DFF; -fx-border-radius: 10; -fx-background-radius: 12;">
+                     <children>
+                        <Label contentDisplay="CENTER" style="-fx-text-fill: #ff486a; -fx-alignment: center;" text="･ﾟ✧ Bem-Vindo✧ﾟ･" textAlignment="CENTER">
+                           <font>
+                              <Font name="Harlow Solid Italic" size="36.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Separator prefWidth="350.0">
+                           <VBox.margin>
+                              <Insets top="7.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <Label lineSpacing="3.0" prefHeight="292.0" prefWidth="422.0" style="-fx-background-color: transparent; -fx-text-fill: #ff486a;" text="Aqui você pode cadastrar, editar e consultar informações sobre cursos e alunos de forma fácil e rápida. Use o menu à esquerda para navegar entre as opções disponíveis.  Nosso sistema garante o controle dos cadastros, respeitando as regras de matrícula e assegurando a integridade dos dados da instituição.  Comece escolhendo uma opção no menu para gerenciar seus cursos e alunos!" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children></StackPane>
+   </center>
+</BorderPane>
