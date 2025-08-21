@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var nome = prompt('Digite seu nome:')
+        var idade = parseInt(prompt('Digite sua idade:'))
+
+        classificação=""
+        if (idade>=0 && idade<15){
+            classificação = 'Criança'
+        } else if(idade>=16 && idade<30){
+            classificação = 'Jovem'
+        } else if(idae>=30 && idade<60){
+            classificação = 'Adulto'
+        } else if(idade>=60){
+            classificação= 'Idoso'
+        }
+
+        alert(`${nome}, você está classificado como: ${classificação}`)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

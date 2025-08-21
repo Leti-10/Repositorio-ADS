@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var valortotal = 0;
+        var valorunit=0;
+        var desconto = 0;  
+        while (true) {
+            regiao = parseInt(prompt('Para qual região seria o transporte (1 - Sul; 2 - Sudeste; 3 - Centro-Oeste)?'));
+
+            if (regiao === 1) { 
+                valorunit = 1.00;
+                desconto = 0.10;
+                break;
+            } 
+            else if (regiao === 2) { 
+                valorunit = 1.20;
+                desconto = 0.12;
+                break;
+            } 
+            else if (regiao === 3) { 
+                valorunit = 1.30;
+                desconto = 0.13;
+                break;
+            } 
+            else {
+                alert("Região inválida!");
+            }
+        }
+ 
+        var distancia = parseFloat(prompt("Insira a distância em km do transporte:"))
+        var gas= parseFloat(prompt('Insira o preço da gasolina na sua região:'))
+        disfrete = distancia*gas
+        var peças = prompt('Insira a quantidade de peças a serem transportadas:')
+
+        if (peças<=1000){
+            valortotal = peças*valorunit;
+        } else{
+            var valorbase = 1000*valorunit;
+                var excedente = peças -1000;
+                var valorexc = excedente*valorunit*(1-desconto);
+
+                valortotal= valorexc + valorbase;
+        } 
+
+        
+
+        while (true){
+        var rastreamento = prompt("Deseja rastreamento do seu produto (S-Sim e N-Não)?").toLowerCase();
+
+        taxa = ''
+        if (rastreamento === 'sim' || rastreamento === 's'){
+            taxa = 200.00
+            break;
+        } else if(rastreamento === 'não' || rastreamento === 'n'){
+            taxa=0.00
+            break;
+        } else{
+            alert('Opção inválida. Digite "S" para Sim ou "N" para Não.')
+        }
+    }
+
+        var valorfrete = valortotal+disfrete+taxa
+
+        alert(`O valor do frete por km é: R$${disfrete.toFixed(2)}\n O valor do frete por peças é: R$${valortotal.toFixed(2)}\n A taxa de rastreamento é: R$${taxa.toFixed(2)}\n O Total do frete é de: R$${valorfrete.toFixed(2)}` )
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

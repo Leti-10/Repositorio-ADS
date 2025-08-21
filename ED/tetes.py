@@ -1,10 +1,18 @@
-def zigue_zague(s):
-    resul=""
-    for x in range(len(s)):
-        if x % 2 == 0:
-            resul += s[x].upper()
-        else:
-            resul += s[x]
-    return resul
+def soma_duplas(nums):
+    return sum(n for n in set(nums) if nums.count(n) == 2)
 
-print(f'{zigue_zague('julia')}')
+print(soma_duplas([1, 2, 2, 3, 4, 6, 6]))
+print(soma_duplas([1,2,3,4,5,5,6,6,7]))
+print("----------------------------------------------------")
+
+l = [1, 2, 2, 3, 4, 6, 6]
+
+soma = 0
+for n in set(l):
+    if l.count(n) == 2:
+        soma +=n
+    
+
+print(soma)
+         
+    

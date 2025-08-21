@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var nota1 = parseFloat(prompt("Digite sua nota da Atividade prática em laboratorio:"))
+        var nota2 = parseFloat(prompt('Digite sua nota da Prova do semestre:'))
+        var nota3 = parseFloat(prompt('Digite sua nota do Trabalho teórico:'))
+
+        classificação = ""
+        medp = ((2*nota1)+(5*nota2)+(3*nota3))/10
+
+        if (medp>=0 && medp<=4.99){
+            classificação = 'F'
+        } else if(medp>=5 && medp <=5.99){
+            classificação = 'E'
+        } else if(medp>=6 && medp<=6.99){
+            classificação='D'
+        } else if(medp>=7 && medp<=7.99){
+            classificação='C'
+        } else if(medp>=8 && medp<= 8.99){
+            classificação='B'
+        } else if(medp>=9 && medp<=10){
+            classificação = 'A'
+        }
+
+        alert(`A média do aluno é = ${medp} e sua classificação é: ${classificação}`)
+
+    </script>
+    </head>
+<body>
+    
+</body>
+</html>
