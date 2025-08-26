@@ -1,11 +1,11 @@
-
-let obj1={
-    valor:10
+function Empresa(nome, razaoSocial){
+    this.nome = nome
+    this.razaoSocial = razaoSocial
+    this.detalhe = function(){
+        return this.nome + "\n" + this.razaoSocial
+    }
 }
 
-let obj2=obj1
-
-obj2.valor=50
-
-console.log(`valo do objeto 1: ${obj1.valor}`)
-console.log(`valo do objeto 2: ${obj2.valor}`)
+let emp = new Empresa("Mercado Online", "1234567897898" )
+let emp2 = new Empresa("Walmart", "1234509604900")
+console.log("Detalhe da empresa: \n" + emp.detalhe() )
