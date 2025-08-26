@@ -136,6 +136,11 @@ for chave in dicionario:
         novo[chave]=valor
 print(novo)
 
+#dicionario = {1:2, 2:14, 3:8, 4:12, 5:9}
+# novo = {chave: valor for chave, valor in # # dicionario.items() if valor >= 5 and valor # % 2 == 0}
+# print(novo)
+
+
 # Dado um dicionário, ordene-o pelos valores.
 
 dic= {1:4, 2:15, 3:6, 4:9, 5:20, 6:3, 7:12, 8:7, 9:18, 10:5}
